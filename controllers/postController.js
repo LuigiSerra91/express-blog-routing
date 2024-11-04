@@ -32,8 +32,7 @@ const show = ('/posts/:slug', (req, res) => {
   })
 
   const store = (req, res) => {
-    console.log(req);
-    console.log(req.body);
+    
     const postTwo = {
       ...req.body
 
@@ -52,7 +51,7 @@ const show = ('/posts/:slug', (req, res) => {
   }
 
   module.exports = {
-    show,
     index,
+    show,
     store
   }
