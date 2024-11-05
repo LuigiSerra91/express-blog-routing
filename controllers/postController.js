@@ -38,11 +38,11 @@ const show = ('/posts/:slug', (req, res) => {
 
     }
 
-    fs.writeFileSync('./data/posts.js', `module.exports = ${JSON.stringify(posts, null, 4)}`)
+    
 
     posts.push(postTwo)
 
-    
+    fs.writeFileSync('./data/posts.js', `module.exports = ${JSON.stringify(posts, null, 4)}`)
 
     
     res.json({

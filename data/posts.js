@@ -56,5 +56,10 @@ module.exports = [
             "Ricette vegetariane",
             "Ricette al forno"
         ]
+    },
+    {
+        "nome": "birba",
+        "colore": "orange",
+        "eta": 4
     }
 ]
